@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		7F92CDCC1E7FD9F800B91485 /* MHCustomButtons.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F92CDCA1E7FD9F800B91485 /* MHCustomButtons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F92CDD41E7FDA7A00B91485 /* MHCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F92CDD31E7FDA7A00B91485 /* MHCircleButton.swift */; };
+		7F92CDD61E7FDAA700B91485 /* MHRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F92CDD51E7FDAA700B91485 /* MHRoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F92CDC71E7FD9F800B91485 /* MHCustomButtons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MHCustomButtons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F92CDCA1E7FD9F800B91485 /* MHCustomButtons.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHCustomButtons.h; sourceTree = "<group>"; };
 		7F92CDCB1E7FD9F800B91485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F92CDD31E7FDA7A00B91485 /* MHCircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHCircleButton.swift; sourceTree = "<group>"; };
+		7F92CDD51E7FDAA700B91485 /* MHRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHRoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +50,20 @@
 		7F92CDC91E7FD9F800B91485 /* MHCustomButtons */ = {
 			isa = PBXGroup;
 			children = (
+				7F92CDD21E7FDA4500B91485 /* Classes */,
 				7F92CDCA1E7FD9F800B91485 /* MHCustomButtons.h */,
 				7F92CDCB1E7FD9F800B91485 /* Info.plist */,
 			);
 			path = MHCustomButtons;
+			sourceTree = "<group>";
+		};
+		7F92CDD21E7FDA4500B91485 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7F92CDD31E7FDA7A00B91485 /* MHCircleButton.swift */,
+				7F92CDD51E7FDAA700B91485 /* MHRoundedButton.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +110,7 @@
 					7F92CDC61E7FD9F800B91485 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 537UN6KEVU;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,6 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F92CDD61E7FDAA700B91485 /* MHRoundedButton.swift in Sources */,
+				7F92CDD41E7FDA7A00B91485 /* MHCircleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +257,7 @@
 		7F92CDD01E7FD9F800B91485 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 537UN6KEVU;
@@ -252,6 +270,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mhermans.MHCustomButtons;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -259,6 +278,7 @@
 		7F92CDD11E7FD9F800B91485 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 537UN6KEVU;
